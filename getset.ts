@@ -12,5 +12,5 @@ class Student{
 
 let val = new Student();
 
-val.name = "Aswathy"
+val.name = "Aswathy"                              
 console.log(val.name);
