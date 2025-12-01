@@ -1,12 +1,16 @@
-var Person = /** @class */ (function () {
-    function Person(name, age) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Person {
+    name;
+    age;
+    constructor(name, age) {
         this.name = name;
         this.age = age;
     }
-    Person.prototype.greet = function () {
-        console.log("Hi ".concat(this.name, ", age: ").concat(this.age));
-    };
-    return Person;
-}());
-var person = new Person("Alice", 30);
+    greet() {
+        console.log(`Name: ${this.name}, Age: ${this.age}`);
+    }
+}
+const person = new Person("Alice", 30);
 person.greet();
+//# sourceMappingURL=class.js.map

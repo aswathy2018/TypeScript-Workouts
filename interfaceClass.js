@@ -1,10 +1,10 @@
-var val = /** @class */ (function () {
-    function val() {
-    }
-    val.prototype.process = function () {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class val {
+    process() {
         console.log("Hiii.. ");
-    };
-    return val;
-}());
-var res = new val();
+    }
+}
+let res = new val();
 res.process();
+//# sourceMappingURL=interfaceClass.js.map

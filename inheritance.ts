@@ -1,18 +1,22 @@
-class Animal{
-    constructor(public name: string){}
+class Name{
+    name:string;
 
-    seek(){
-        console.log(`${this.name} make a sound`);
+    constructor(name: string){
+        this.name = name
+    }
+
+    wish(){
+        console.log(`Hii ${this.name}, `)
     }
 }
 
-class Dog extends Animal{
-    speak(){
-        console.log(`${this.name} barks`);
+class stud extends Name{
+    val(){
+        console.log(`${this.name} is a student`);
     }
 }
 
-const dog = new Dog("Buddy")
+let res = new stud("Aswathy")
 
-dog.speak()
-dog.seek()
+res.wish()
+res.val()

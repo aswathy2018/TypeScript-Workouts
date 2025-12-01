@@ -1,28 +1,36 @@
-// Using instanceof
-var Dog = /** @class */ (function () {
-    function Dog() {
-    }
-    Dog.prototype.bark = function () {
-        console.log("Boww");
-    };
-    return Dog;
-}());
-var Cat = /** @class */ (function () {
-    function Cat() {
-    }
-    Cat.prototype.meow = function () {
-        console.log("Meowww..");
-    };
-    return Cat;
-}());
-function makeSound(animals) {
-    if (animals instanceof Dog) {
-        animals.bark();
+"use strict";
+// // Using instanceof
+Object.defineProperty(exports, "__esModule", { value: true });
+// class Dog{
+//     bark(){
+//         console.log("Boww")
+//     }
+// }
+// class Cat{
+//     meow(){
+//         console.log("Meowww..")
+//     }
+// }
+// function makeSound(animals: Dog|Cat){
+//     if(animals instanceof Dog){
+//         animals.bark()
+//     }else{
+//         animals.meow()
+//     }
+// }
+// const dog = new Dog();
+// const cat = new Cat();
+// makeSound(cat)
+function isString(value) {
+    return typeof value == "string";
+}
+function printV(value) {
+    if (isString(value)) {
+        console.log("Value: ", value);
     }
     else {
-        animals.meow();
+        console.log("Number: ", value);
     }
 }
-var dog = new Dog();
-var cat = new Cat();
-makeSound(cat);
+printV("Aswathy");
+//# sourceMappingURL=typeGuards.js.map
