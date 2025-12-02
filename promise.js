@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-let fruit = "mango";
-let val = new Promise((resolve, reject) => {
+var fruit = 123;
+var val = new Promise(function (resolve, reject) {
     if (typeof fruit == "string") {
         resolve(fruit);
     }
@@ -9,6 +7,5 @@ let val = new Promise((resolve, reject) => {
         reject("Not a fruit");
     }
 });
-val.then((res) => console.log(res))
-    .catch((err) => console.log(err));
-//# sourceMappingURL=promise.js.map
+val.then(function (res) { return console.log(res); })
+    .catch(function (err) { return console.log(err); });
